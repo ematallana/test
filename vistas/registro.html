@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comfacauca App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <style>
+        .custom-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    </style>
+</head>
+
+<body>
+
+    <ion-app>
+
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-buttons slot="start">
+                    <ion-button>
+                        <!-- <ion-icon slot="icon-only" name="logo-ionic"></ion-icon> -->
+                        <ion-img src="../Comfacauca.png" style="width: 30px; height: 30px;"></ion-img>
+                    </ion-button>
+                </ion-buttons>
+                <ion-title>Comfacauca App</ion-title>    
+                <ion-button id="btnBack" slot="end"  color="primary" >                    
+                    <ion-icon name="chevron-back-outline" slot="start"></ion-icon>  
+                </ion-button>            
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>            
+              <ion-grid>
+                <ion-row color="primary" justify-content-center>
+                  <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                    <div text-center>
+                      <ion-item>
+                      <ion-label color="success">Active su Cuenta!</ion-label>
+                      </ion-item>
+                    </div>
+                    <div padding>
+                      <ion-item>
+                            <ion-input  id="txtDocumento" type="text" placeholder="Documento" required></ion-input>
+                            <ion-button id="btnBuscar">
+                            <ion-icon name="search"></ion-icon>
+                            <ion-label>Buscar</ion-label>
+                            </ion-button>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input  id="txtNombre" type="text" placeholder="Nombre" disabled></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input id="txtEmail" type="email" placeholder="Correo Electrónico" disabled></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input id="txtCelular" type="email" placeholder="Celular" disabled></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input id="txtDireccion" type="email" placeholder="Dirección" disabled></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input id="txtPassword" type="password" placeholder="Ingrese Password" required></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input id="txtConfirm" type="password" placeholder="Ingrese Password Otra Vez!" required></ion-input>
+                      </ion-item>
+                    </div>
+                    <div padding>
+                      <ion-button  size="large" id="btnActivar" color="success" expand="block">Activar</ion-button>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>            
+          </ion-content>
+    </ion-app>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+    <!-- LOGIC -->
+    <script src="../js/registro.js" type="module"></script>
+</body>
+
+</html>
+
+
+
+
+
+  

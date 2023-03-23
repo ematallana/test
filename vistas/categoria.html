@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comfacauca App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+
+    <ion-app>
+
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-buttons slot="start">
+                    <ion-button>
+                        <!-- <ion-icon slot="icon-only" name="logo-ionic"></ion-icon> -->
+                        <ion-img src="../Comfacauca.png" style="width: 30px; height: 30px;"></ion-img>
+                    </ion-button>
+                </ion-buttons>
+                <ion-title>Comfacauca App</ion-title>
+                <ion-button id="btnCategoriaBack" slot="end"  color="primary" >                    
+                    <ion-icon name="chevron-back-outline" slot="start"></ion-icon>  
+                </ion-button>                
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="4" offset-md="4">
+                        <!-- Ionic Card -->
+                        <ion-card color="light">
+                            <ion-card-header color="secondary">
+                                <ion-card-title>
+                                    Categoría - Estado Afiliado
+                                </ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <ion-row>
+                                    <ion-col size-md="4" offset-md="4">
+                                        <ion-item>
+                                            <ion-icon name="logo-buffer" item-start></ion-icon>                        
+                                            Categoria: 
+                                            <ion-badge color="success" id="categoria" item-end></ion-badge>
+                                        </ion-item>
+                                        <ion-item>
+                                            <ion-icon name="logo-buffer" item-start></ion-icon>                        
+                                            Estado: 
+                                            <ion-badge color="success" id="estado" item-end></ion-badge>
+                                        </ion-item>
+                                    </ion-col>
+                                </ion-row> 
+                                
+                            </ion-card-content>
+                        </ion-card>     
+                            
+                    </ion-col>
+                </ion-row>
+                   
+            </ion-grid>
+        </ion-content>
+    </ion-app>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+    <!-- LOGIC -->
+    <script src="../js/categoria.js" type="module"></script>
+</body>
+
+</html>

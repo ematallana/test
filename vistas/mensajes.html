@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comfacauca App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+
+    <ion-app>
+
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-buttons slot="start">
+                    <ion-button>
+                        <!-- <ion-icon slot="icon-only" name="logo-ionic"></ion-icon> -->
+                        <ion-img src="../Comfacauca.png" style="width: 30px; height: 30px;"></ion-img>
+                    </ion-button>
+                </ion-buttons>
+                <ion-title>Comfacauca App</ion-title>
+                <ion-button id="btnBack" slot="end"  color="primary" >                    
+                    <ion-icon name="chevron-back-outline" slot="start"></ion-icon>  
+                </ion-button>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="4" offset-md="4" >                                
+                        <div text-center>
+                          <ion-item>
+                          <ion-label color="success">Mensajes de Comfacauca App!</ion-label>
+                          </ion-item>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size-md="4" offset-md="4" id="contentServicios" >    
+                        <ion-item>
+                          <ion-card color="light" clear>
+                            <ion-card-header >
+                              <ion-label >Mensaje 2022-01-03 14:22:15</ion-label>
+                            </ion-card-header>
+                            <ion-card-content>
+                              El Pago de la cuota monetaria del periodo 202112 fue efectuado.
+                            </ion-card-content>
+                          </ion-card>                                                                          
+                        </ion-item>  
+                        <ion-item>                          
+                          <ion-card  color="light" outline>
+                            <ion-card-header >
+                              <ion-label >Mensaje 2021-12-01 09:12:35</ion-label>
+                            </ion-card-header>
+                            <ion-card-content>
+                              El Pago de la cuota monetaria del periodo 202111 fue efectuado.
+                            </ion-card-content>
+                          </ion-card>                          
+                        </ion-item>  
+                        <ion-item>                          
+                        <ion-card color="light" outline>
+                            <ion-card-header >
+                              <ion-label >Mensaje 2021-11-30 17:26:25</ion-label>
+                            </ion-card-header>
+                            <ion-card-content>
+                              Están abiertas las incripciones para el Curso de Excel Intermedio
+                            </ion-card-content>
+                          </ion-card>  
+                          </ion-item>                                                           
+                    </ion-col>
+                </ion-row>
+                
+                
+
+            </ion-grid>
+            
+        </ion-content>
+    </ion-app>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+    <!-- LOGIC -->
+    <script src="../js/mensajes.js" type="module"></script>
+</body>
+
+</html>

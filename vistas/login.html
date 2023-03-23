@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comfacauca App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <style>
+        .custom-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    </style>
+</head>
+
+<body>
+
+    <ion-app>
+
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-buttons slot="start">
+                    <ion-button>
+                        <!-- <ion-icon slot="icon-only" name="logo-ionic"></ion-icon> -->
+                        <ion-img src="../Comfacauca.png" style="width: 30px; height: 30px;"></ion-img>
+                    </ion-button>
+                </ion-buttons>
+                <ion-title>Comfacauca App</ion-title>                
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-grid>
+                <ion-row color="primary" justify-content-center>
+                  <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                    
+                    <div padding>
+                      
+                      <ion-item>
+                        <ion-input id="txtDocumento" name="txtDocumento" type="text" placeholder="Digite su documento"  required></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input id="txtPassword" name="txtPassword" type="password" placeholder="Password"  required></ion-input>
+                      </ion-item>
+                    </div>                    
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-button id="btnIngresar"  color="success">
+                            <ion-icon name="key" slot="start"></ion-icon>                                        
+                             Ingresar</ion-button>
+                    </ion-col>
+                    <ion-col size="6">
+                        <ion-button id="btnRegistrar" fill="outline" color="secondary" clear>
+                            <ion-icon name="person-add" slot="start"></ion-icon>                                    
+                            Registrese
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <div id="divMensaje" ></div>
+                </ion-row>
+              </ion-grid>
+        </ion-content>
+    </ion-app>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+    <!-- LOGIC -->
+    <script src="../js/login.js" type="module"></script>
+</body>
+
+</html>
