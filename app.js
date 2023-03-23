@@ -31,7 +31,7 @@ const consultarAfiliado = (docSearch) => {
 window.addEventListener('load', function () {    
     documento = localStorage.getItem("appDoc");         
     let docsec = sessionStorage.getItem("appDoc");   
-    if((documento == '') || (documento == null) || (documento.length == 0) ){
+    if((documento == '') || (documento == null)  ){
       fncIrPagina('vistas/login.html');
     }else{
       consultarAfiliado(documento);
