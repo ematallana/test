@@ -56,7 +56,7 @@
   window.addEventListener('load', function () {    
     let documento = localStorage.getItem("appDoc");         
     let docsec = sessionStorage.getItem("appDoc");                   
-    if((documento != '') && (documento != null) & (documento.length != 0)){
+    if((documento != '') && (documento != null) ){
       window.location.href = '../index.html';
     }
   });
